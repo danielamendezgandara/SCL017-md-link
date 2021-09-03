@@ -1,4 +1,4 @@
-let fs=require('fs');
+const fs=require('fs');
 
 fs.readFile('../files_txt/file1.txt','utf-8',(err,data)=>{
     if(err){
