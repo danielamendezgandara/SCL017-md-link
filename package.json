@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/danielamendezgandara/SCL017-md-link/issues"
   },
-  "homepage": "https://github.com/danielamendezgandara/SCL017-md-link#readme"
+  "homepage": "https://github.com/danielamendezgandara/SCL017-md-link#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
 }
