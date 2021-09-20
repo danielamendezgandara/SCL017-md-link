@@ -3,7 +3,7 @@
 
 [![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+[[Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](http://travis-ci.org/joemccann/dillinger)
 
 Read and analyze the JavaScript API section of the project described in README.md
 
@@ -47,7 +47,7 @@ Dillinger uses a number of open source projects to work properly:
 - [node.js] - evented I/O for the backend
 - [Express] - fast node.js network app framework [@tjholowaychuk]
 - [Gulp] - the streaming build system
-- [Breakdance](https://breakdance.github.io/breakdance/) - HTML
+- [Breakdancegalletagalletagalletagalletagalletagalletagalletagalleta](https://breakdance.github.io/breakdance/) - HTML
 to Markdown converter
 - [jQuery] - duh
 
@@ -180,11 +180,11 @@ MIT
    [Twitter Bootstrap]: <http://twitter.github.com/bootstrap/>
    [jQuery]: <http://jquery.com>
    [@tjholowaychuk]: <http://twitter.com/tjholowaychuk>
-   [express]: <http://expressjs.com>
-   [AngularJS]: <http://angularjs.org>
-   [Gulp]: <http://gulpjs.com>
+   [express](http://expressjs.com)
+   [AngularJS](http://angularjs.org)
+   [Gulp](https://gulpjs.com)
 
-   [PlDb](http://github.com/joemccann/dillinger/tree/master/plugins/dropbox/README.md)
+   [PlDb](https://github.com/joemccann/dillinger/tree/master/plugins/dropbox/README.md)
    [PlGh]: <https://github.com/joemccann/dillinger/tree/master/plugins/github/README.md>
    [PlGd]: <https://github.com/joemccann/dillinger/tree/master/plugins/googledrive/README.md>
    [PlOd]: <https://github.com/joemccann/dillinger/tree/master/plugins/onedrive/README.md>
