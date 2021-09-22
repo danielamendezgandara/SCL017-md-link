@@ -8,8 +8,6 @@ describe('mdLinks', () => {
 
 });*/
 
-//const {checkIsMdFile,getLinksMdFile} = require('../lib/package-functions');
-
 describe('Is a markdown file?',()=>{
   const {checkIsMdFile} = require('../lib/package-functions');
   it('Should be a markdown file',()=>{
