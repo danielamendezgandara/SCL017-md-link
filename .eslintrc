@@ -1,9 +1,29 @@
+
 {
   "env": {
-    "node": true
+      "browser": true,
+      "commonjs": true,
+      "es2021": true,
+      "node": true
   },
+  "extends": [
+      "airbnb-base",
+      "eslint:recommended"
+  ],
   "parserOptions": {
-    "ecmaVersion": 8
+      "ecmaVersion": 12
+  },
+    "rules": {
+        "linebreak-style": 0,
+        "prefer-destructuring": 0,
+        "import/extensions": 0,
+        "import/prefer-default-export": 0,
+        "jest/no-disabled-tests": "warn",
+        "jest/no-focused-tests": "error",
+        "jest/no-identical-title": "error",
+        "jest/prefer-to-have-length": "warn",
+        "jest/valid-expect": "error",
+         "no-console": "off"
   }
 }
 

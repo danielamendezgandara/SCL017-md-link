@@ -115,6 +115,7 @@ it('It should be an object with error information',()=>{
 });
 
 it('Should be HTTP response code information redirect successful with url http',()=>{
+  expect.assertions(1);
   return expect(responseHttpRequestAsync('http','http://hazgrandestuscomidas.com/blog/como-')).resolves.toEqual({status: 301,
   message: 'ok',
   statusMessage: 'Moved Permanently',
@@ -123,6 +124,7 @@ it('Should be HTTP response code information redirect successful with url http',
 });
 
 it('Should be HTTP response code information redirect successful with url https',()=>{
+  expect.assertions(1);
   return expect(responseHttpRequestAsync('https','https://nodejs.org/')).resolves.toEqual({status: 302,
   message: 'ok',
   statusMessage: 'Moved Temporarily',
@@ -168,6 +170,7 @@ describe('The function returns an array with statistics of validated links',()=>
   ];
   test('It should be an array of objects with information about each link found',()=>{
     const {validateMdLinksArray} = require('../lib/package-functions');
+    expect.assertions(1);
     return expect(validateMdLinksArray(mdLinksArray)).resolves.toBeInstanceOf(Array);
   });
 
@@ -209,6 +212,7 @@ describe('Returns an object with statistics of the links',()=>{
 
   test('Should be a object',()=>{
     const {statsAndValidateLinks}=require('../lib/package-functions');
+    expect.assertions(1);
     return statsAndValidateLinks(mdLinksArray,{total:16,unique:1}).then(data =>expect(data).toBeInstanceOf(Object));
 
 });

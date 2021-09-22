@@ -1,4 +1,4 @@
-
+#!/usr/bin/env node
 const mdLinks = require ('./lib/md-links-extractor');
 //const { validateMdLinksArray } = require('./lib/package-functions');
 
