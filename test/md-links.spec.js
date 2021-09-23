@@ -68,6 +68,16 @@ describe('returns an object with the total number of links and the number of uni
     line: 4,
   },
   ];
+
+  const mdLinkUnique = [
+    {
+      file: 'C:/Users/danie/Documents/md-links/SCL017-md-link/md/toro.md',
+      text: 'miaumiau',
+      href: 'https://travis-ci.org/joemccann/dillinger.svg?branch=master',
+      line: 4,
+    },
+  ];
+
   it('should be a object with total links and uniques links', () => {
     expect.assertions(1);
     expect(statsMdLinks(mdLinksArray)).toBeInstanceOf(Object);
@@ -75,6 +85,10 @@ describe('returns an object with the total number of links and the number of uni
   it('should return that a unique link exists', () => {
     expect.assertions(1);
     expect(statsMdLinks(mdLinksArray).unique).toBe(1);
+  });
+  it('should be an array of length equal to 1', () => {
+    expect.assertions(1);
+    expect(statsMdLinks(mdLinkUnique).total).toBe(1);
   });
 });
 
