@@ -3,7 +3,7 @@ const insertNum = (numUser) => {
   const numRandom = Math.floor(Math.random() * (7 - 1) + 1);
 
   return new Promise((resolve, reject) => {
-    if (isNaN(numUser)) {
+    if (Number.isNaN(numUser)) {
       reject(new Error('Tipo de entrada incorrecta'));
     } else if (numUser === numRandom) {
       const result = {
@@ -33,7 +33,7 @@ insertNum(5).then((result) => console.log(`Dado ${result.numR}: obtuviste ${resu
 // Cake birthday promise
 const healhty = true;
 
-const eatCake = (cake) => new Promise((resolve, reject) => {
+const eatCake = (cake) => new Promise((resolve) => {
   const message = `Comeré un pastel de   ${cake.flavor}${cake.size}`;
   resolve(message);
 });
@@ -60,8 +60,8 @@ willGetMyCakeBirthdary
 // Odd or even number
 
 const oddOrEvenNumber = (data) => new Promise((resolve, reject) => {
-  if (isNaN(data)) {
-    reject('error');
+  if (Number.isNaN(data)) {
+    reject(new Error('Ha ocurrido un error'));
   } else if (data % 2 !== 0) {
     setTimeout(resolve, 1000, 'odd');
   } else {

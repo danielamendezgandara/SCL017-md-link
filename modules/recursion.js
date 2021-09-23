@@ -1,5 +1,6 @@
 // 'use strict';
 
+const fs = require('fs');
 /* const path = require('path'); */
 
 /* const getFiles = (folder,extension,callback)=>{
@@ -35,19 +36,17 @@ mymodule(folder,ext,(err,data)=>{
 
 const a = process.argv[2];
 
-const walk = function (dir) {
+const walk = (dir) => {
   let results = [];
-  const fs = require('fs');
-  // const path =require('path');
   const list = fs.readdirSync(dir);
   list.forEach((file) => {
-    file = `${dir}/${file}`;
-    console.log(file);
-    const stat = fs.statSync(file);
+    let pathFile = file;
+    pathFile = `${dir}/${file}`;
+    const stat = fs.statSync(pathFile);
     if (stat && stat.isDirectory()) {
-      results = results.concat(walk(file));
+      results = results.concat(walk(pathFile));
     } else {
-      results.push(file);
+      results.push(pathFile);
     }
   });
   return results;
