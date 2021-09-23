@@ -50,30 +50,30 @@ describe('returns an array with information about the links found', () => {
 
 describe('returns an object with the total number of links and the number of unique links', () => {
   const mdLinksArray = [{
-    file: 'C:/Users/danie/Documents/md-links/SCL017-md-link/md/toro.md',
-    text: 'Node.js',
     href: 'https://nodejs.org',
+    text: 'Node.js',
+    file: 'C:/Users/danie/Documents/md-links/SCL017-md-link/md/toro.md',
     line: 2,
   },
   {
-    file: 'C:/Users/danie/Documents/md-links/SCL017-md-link/md/TEST.md',
-    text: '[Build Status',
     href: 'https://travis-ci.org/joemccann/dillinger.svg?branch=master',
+    text: '[Build Status',
+    file: 'C:/Users/danie/Documents/md-links/SCL017-md-link/md/TEST.md',
     line: 6,
   },
   {
-    file: 'C:/Users/danie/Documents/md-links/SCL017-md-link/md/toro.md',
-    text: 'miaumiau',
     href: 'https://travis-ci.org/joemccann/dillinger.svg?branch=master',
+    text: 'miaumiau',
+    file: 'C:/Users/danie/Documents/md-links/SCL017-md-link/md/toro.md',
     line: 4,
   },
   ];
 
   const mdLinkUnique = [
     {
-      file: 'C:/Users/danie/Documents/md-links/SCL017-md-link/md/toro.md',
-      text: 'miaumiau',
       href: 'https://travis-ci.org/joemccann/dillinger.svg?branch=master',
+      text: 'miaumiau',
+      file: 'C:/Users/danie/Documents/md-links/SCL017-md-link/md/toro.md',
       line: 4,
     },
   ];
@@ -94,9 +94,9 @@ describe('returns an object with the total number of links and the number of uni
 
 describe('return an object with HTTP response code information from the link', () => {
   const linkValidate = {
-    file: 'C:/Users/danie/Documents/md-links/SCL017-md-link/md/toro.md',
-    text: 'Node.js',
     href: 'https://nodejs.org',
+    text: 'Node.js',
+    file: 'C:/Users/danie/Documents/md-links/SCL017-md-link/md/toro.md',
     line: 2,
   };
 
@@ -168,21 +168,21 @@ describe('is path is directory or file?', () => {
 });
 describe('the function returns an array with statistics of validated links', () => {
   const mdLinksArray = [{
-    file: 'C:/Users/danie/Documents/md-links/SCL017-md-link/md/TEST.md',
-    text: 'express',
     href: 'http://expressjs.com',
+    text: 'express',
+    file: 'C:/Users/danie/Documents/md-links/SCL017-md-link/md/TEST.md',
     line: 183,
   },
   {
-    file: 'C:/Users/danie/Documents/md-links/SCL017-md-link/md/TEST.md',
-    text: 'AngularJS',
     href: 'http://angularjs.org',
+    text: 'AngularJS',
+    file: 'C:/Users/danie/Documents/md-links/SCL017-md-link/md/TEST.md',
     line: 184,
   },
   {
-    file: 'C:/Users/danie/Documents/md-links/SCL017-md-link/md/TEST.md',
-    text: 'Gulp',
     href: 'https://gulpjs.com',
+    text: 'Gulp',
+    file: 'C:/Users/danie/Documents/md-links/SCL017-md-link/md/TEST.md',
     line: 185,
   },
   ];
@@ -193,18 +193,18 @@ describe('the function returns an array with statistics of validated links', () 
 });
 describe('returns an object with statistics of the links', () => {
   const mdLinksArray = [{
-    file: 'C:/Users/danie/Documents/md-links/SCL017-md-link/md/TEST.md',
-    text: '![N|Solid',
     href: 'https://cldup.com/dTxpPi9lDf.thumb.png',
+    text: '![N|Solid',
+    file: 'C:/Users/danie/Documents/md-links/SCL017-md-link/md/TEST.md',
     line: 4,
     status: 200,
     message: 'ok',
     statusMessage: 'OK',
   },
   {
-    file: 'C:/Users/danie/Documents/md-links/SCL017-md-link/md/TEST.md',
-    text: '[Build Status',
     href: 'https://travis-ci.org/joemccann/dillinger.svg?branch=master',
+    text: '[Build Status',
+    file: 'C:/Users/danie/Documents/md-links/SCL017-md-link/md/TEST.md',
     line: 6,
     status: 301,
     message: 'ok',
@@ -213,9 +213,9 @@ describe('returns an object with statistics of the links', () => {
     hrefRedirect: 'https://api.travis-ci.org/joemccann/dillinger.svg?branch=master',
   },
   {
-    file: 'C:/Users/danie/Documents/md-links/SCL017-md-link/md/TEST.md',
-    text: 'Breakdancegalletagalletagalletagalletagalletagalle',
     href: 'https://breakdance.github.io/breakdance/',
+    text: 'Breakdancegalletagalletagalletagalletagalletagalle',
+    file: 'C:/Users/danie/Documents/md-links/SCL017-md-link/md/TEST.md',
     line: 50,
     status: 200,
     message: 'ok',
