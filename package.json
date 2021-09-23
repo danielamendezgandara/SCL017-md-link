@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/danielamendezgandara/SCL017-md-link#readme",
   "dependencies": {
+    "eslint-plugin-jest": "^24.4.2",
     "inquirer": "^8.1.5",
     "prompt-sync": "^4.2.0"
   },

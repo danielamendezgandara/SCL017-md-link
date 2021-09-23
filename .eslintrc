@@ -8,8 +8,9 @@
   },
   "extends": [
       "airbnb-base",
-      "eslint:recommended"
+      "plugin:jest/all"
   ],
+  "plugins": ["jest"],
   "parserOptions": {
       "ecmaVersion": 12
   },
@@ -23,8 +24,12 @@
         "jest/no-identical-title": "error",
         "jest/prefer-to-have-length": "warn",
         "jest/valid-expect": "error",
-         "no-console": "off"
+        "jest/no-test-return-statement": "off",
+         "no-console": "off",
+         "quotes":"off"
+         
   }
+  
 }
 
 
