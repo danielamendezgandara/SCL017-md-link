@@ -9,8 +9,8 @@ const mdLinks = require('./lib/md-links-extractor');
 const val = process.argv;
 const op = (g) => {
   const options = {
-    validate: '',
-    stats: '',
+    validate: false,
+    stats: false,
   };
   if (g.length === 4) {
     if (g[3] === '--stats') {

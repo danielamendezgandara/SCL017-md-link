@@ -12,7 +12,7 @@ const {
 describe('is a markdown file?', () => {
   it('should be a markdown file', () => {
     expect.assertions(1);
-    expect(checkIsMdFile('../md/file.md')).toBe(true);
+    expect(checkIsMdFile('../md/file.md')).toBeTruthy();
   });
   it('should not be a markdown file', () => {
     expect.assertions(1);
