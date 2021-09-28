@@ -16,7 +16,7 @@ describe('is a markdown file?', () => {
   });
   it('should not be a markdown file', () => {
     expect.assertions(1);
-    expect(checkIsMdFile('../md/text.txt')).toBe(false);
+    expect(checkIsMdFile('../md/text.txt')).toBeFalsy();
   });
 });
 
@@ -69,14 +69,7 @@ describe('returns an object with the total number of links and the number of uni
   },
   ];
 
-  const mdLinkUnique = [
-    {
-      href: 'https://travis-ci.org/joemccann/dillinger.svg?branch=master',
-      text: 'miaumiau',
-      file: 'C:/Users/danie/Documents/md-links/SCL017-md-link/md/toro.md',
-      line: 4,
-    },
-  ];
+  const mdLinkUnique = [];
 
   it('should be a object with total links and uniques links', () => {
     expect.assertions(1);
@@ -86,9 +79,9 @@ describe('returns an object with the total number of links and the number of uni
     expect.assertions(1);
     expect(statsMdLinks(mdLinksArray).unique).toBe(1);
   });
-  it('should be an array of length equal to 1', () => {
+  it('should be an array of length equal to 0', () => {
     expect.assertions(1);
-    expect(statsMdLinks(mdLinkUnique).total).toBe(1);
+    expect(statsMdLinks(mdLinkUnique).total).toBe(0);
   });
 });
 
